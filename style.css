@@ -1,12 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
-/* Card */
-[data-theme] {
-    background-color: var(--color-bg, white);
-    color: var(--color-contrast-high, #313135);
-}
-
 /* Style-colors*/
 html{
     scroll-behavior: smooth;
@@ -15,6 +9,7 @@ html{
 :root{
     --pink: #FF7C7C;
     --background:#FEF9F8; 
+    --cardBackground: #FFECEA;
 }
 
 p{
@@ -118,6 +113,8 @@ section.title .titleBox .title-description{
     border-radius: 8px;
     margin-top: 3rem;
     display: flex;
+    align-items: flex-end;
+
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
@@ -213,30 +210,40 @@ section.title .title-line{
 
 /* Cards */
 .stack-cards {
-    --stack-cards-gap: var(--space-sm);
+    height: 100%;
+    background: var(--cardBackground);
+    border-radius: 50px; 
 }
 
 .stack-cards__item {
     position: sticky;
     top: var(--space-sm);
     transform-origin: center top;
-}
 
-
-.stack-cards__item > * {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-}
-
-.grid {
-    --grid-gap: 0px;
-    --offset: var(--grid-gap);
+    padding: 4.5rem;
     display: flex;
-    flex-wrap: wrap; }
-    .grid > * {
-      flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-component{
+    max-width: 35%;
+}
+.text-component h2{
+    font-size: 2.5rem;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.stack-cards__item {
+    top: var(--space-sm);
+    left: 0;
+    height: 100%;     
+}
+
+.text-component .function-description{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 160%
 }
   
