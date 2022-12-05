@@ -151,6 +151,23 @@ section.title .title-line{
     padding: -2rem;
     font-size: 0.8rem;
     font-weight: 500;
+
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+@-webkit-keyframes pulse { 
+    0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } 
+    50% { -webkit-transform: translate(0, 10px); transform: translate(0, 10px); } 
+    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } 
+}
+    
+@keyframes pulse { 
+    0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } 
+    50% { -webkit-transform: translate(0, 10px); transform: translate(0, 10px); } 
+    100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); } 
 }
 
 
