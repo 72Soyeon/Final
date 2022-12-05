@@ -1,0 +1,115 @@
+/* Style-colors*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --pink: #FF7C7C;
+    --background:#FEF9F8; 
+}
+
+body {
+    background-color: var(--background);
+    font-family: museo, serif;
+    color: var(--pink); 
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+ }
+
+ a:link{
+    text-decoration: none;
+    color: var(--pink);
+ }
+ 
+ a:visited{
+    text-decoration: none;
+    color: var(--pink);
+ }
+
+
+ body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* Body */
+
+  /* Header(Navigation Bar) */
+  header {
+    position: relative;
+    display: flex;
+    z-index: 20;
+    top: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-sizing: border-box;
+ }
+
+ /* Header (logo) */
+ header .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+ }
+
+
+ section.title {
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20rem;
+
+ }
+ section.title .titleBox h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+ }
+section.title .titleBox .title-description{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+section.title .title-line{
+    position: absolute;
+}
+
+/* Waves */
+.waves { 
+    height: 50%;
+    width:100%;
+    position: absolute;
+    top: -75vh;
+    left:0;
+    z-index: -1;
+    overflow: hidden;
+}
+  
+.wave1{
+    filter: blur(1.8rem);
+    background: url(Assets/Images/wave2.svg) repeat-x;
+    position: absolute;
+    top: 400px;
+    width: 6400px;
+    height: 400px;
+    animation: wave 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, swell 3s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+}
+.wave2 {
+    filter: blur(1.8rem);
+    background: url(Assets/Images/wave1.svg) repeat-x; 
+    position: absolute;
+    top: 400px;
+    width: 6400px;
+    height: 400px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 14s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+}
