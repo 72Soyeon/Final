@@ -7,38 +7,91 @@
     <title>Slice</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/tma0pfw.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- navigation bar -->
     <header>
         <div class="logo"><a href="index.html">Slice</a></div>
-        <div class="word">Now Playing...</div>
+        <div class="music">
+          Now Playing...<br/>
+          <img src = "./Assets/Images/music_note.svg" alt="music note"/>
+        </div>
     </header>
 
 
     <!-- Main title -->
     <section class="title">
         
+        <!-- left description -->
         <div class="titleBox">
             <h1>To SLICE</h1>
 
             <div class="title-description">
                 Your everyday tasks<br/>
-                into a piece of cake
+                into a piece of cake 
             </div> 
-            <img class="title-line" src="./Assets/Images/main-line.svg"/>   
+            <!-- <img class="title-line" src="./Assets/Images/main-line.svg"/>    -->
+
+            <!-- buttons to appstore -->
+            <div　class="title-button-container" style="display: flex;
+            justify-content: flex-start;
+            column-gap: 1.5rem;">
+              <!-- App Store -->
+              <a class="title-button" href="http:apple.com">
+                <i><img src = "./Assets/Images/apple.svg" alt="Apple Logo"/></i>
+                <p class="title-button-description">Get on the <br/> <span class="title-button-store">App Store</span></p>
+              </a>
+
+              <!-- Play Store -->
+              <a class="title-button" href="http:apple.com">
+                <i><img src = "./Assets/Images/Google.svg" alt="Google Logo"/></i>
+                <p class="title-button-description">Get on the <br/><span class="title-button-store">GooglePlay</span></p>
+              </a>
+
+            </div>
         </div>
 
+        <!-- right image -->
         <img src="./Assets/Images/Right.png" />
 
     </section>
 
 
+    <!-- Main Section -->
+    <div class="scroll">
+      <p>Scroll Down</p>
+    </div>
     <section class="main">
+        <!-- wave -->
         <div class="waves">
             <div class="wave1"></div>
             <div class="wave2"></div>
+        </div>
+
+        <!-- cards -->
+        <div class="container max-width-adaptive-md margin-bottom-lg">
+            <ul class="stack-cards js-stack-cards">
+              <li class="stack-cards__item js-stack-cards__item">
+                  <div class="text-component">
+                    <h2>Organize tangled tasks<br/>
+                       like stacking blocks</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+      
+                  <div class="col-6 height-100%">
+                    <img class="block width-100% height-100% object-cover" src="Assets/Images/function-1.png" alt="Image description">
+                  </div>
+
+                </div>
+              </li>
+            </ul>
         </div>
 
     </section>
