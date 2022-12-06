@@ -104,6 +104,12 @@ section.title .titleBox .title-description {
     font-weight: 200;
     margin-bottom: 1rem;
 }
+#piece-of-cake {
+    background-image: url("Assets/Images/main-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: pink;
+}
 
 .title-button-container {
     display: flex;
