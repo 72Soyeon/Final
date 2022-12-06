@@ -331,7 +331,7 @@ section.title .title-line{
 }
   
 .quote-background{
-    filter: blur(0rem);
+    filter: blur(3rem);
     position: relative;
     bottom: -4rem;
     height: 12rem;
