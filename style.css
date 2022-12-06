@@ -23,6 +23,9 @@ body {
     color: var(--pink); 
     margin-left: 1.8rem;
     margin-right: 1.8rem;
+    overflow-x: hidden;
+
+
  }
 
  a:link{
@@ -62,8 +65,7 @@ body {
     box-sizing: border-box;
  }
 
- /* Header (logo) */
- header .logo {
+.logo {
     font-weight: 700;
     font-size: 1.5rem;
  }
@@ -175,13 +177,13 @@ section.title .title-line{
 
 /* Waves */
 .waves { 
-    height: 150%;
+    height: 150vh;
     width:100%;
     opacity: 90%;
     position: absolute;
     top: 10%;
     left:0;
-    z-index: -1;
+    z-index: -2;
     overflow: hidden;
 }
   
@@ -194,6 +196,7 @@ section.title .title-line{
     height: 400px;
     animation: wave 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, swell 3s ease -1.25s infinite;
     transform: translate3d(0, 0, 0);
+    z-index: -2;
 }
 .wave2 {
     filter: blur(1rem);
@@ -204,6 +207,7 @@ section.title .title-line{
     height: 400px;
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 14s ease -1.25s infinite;
     transform: translate3d(0, 0, 0);
+    z-index: -2;
 }
 
 @keyframes wave {
@@ -241,6 +245,7 @@ section.title .title-line{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .text-component{
@@ -264,3 +269,44 @@ section.title .title-line{
     line-height: 160%
 }
   
+
+/* Footer */
+.footer{
+    height: 7.5rem;
+}
+
+.footer .footer-menu{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.footer .footer-menu-item{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* Footer Wave */
+
+.quote-background-wave { 
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    left:0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+  
+.wave3{
+    filter: blur(0rem);
+    background: url(Assets/Images/Background.svg) repeat-x;
+    position: absolute;
+    width: 6400px;
+    height: 30vh;
+    z-index: -3;
+    animation: wave 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, swell 3s ease -1.25s infinite;
+    transform: translate3d(0, 0, 0);
+}
