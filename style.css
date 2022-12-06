@@ -118,9 +118,9 @@ section.title .titleBox .title-description{
     background-color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    min-width: 7.5rem;
+    min-width: 8rem;
     border-radius: 8px;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: flex;
     align-items: flex-end;
 
