@@ -6,6 +6,10 @@ html{
     scroll-behavior: smooth;
 }
 
+*{
+    overflow-x: hidden;
+}
+
 :root{
     --pink: #FF7C7C;
     --background:#FEF9F8; 
@@ -24,8 +28,6 @@ body {
     margin-left: 1.8rem;
     margin-right: 1.8rem;
     overflow-x: hidden;
-
-
  }
 
  a:link{
@@ -86,7 +88,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 18rem;
+    column-gap: 14rem;
+ }
+ .app-name{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1.2rem;
  }
  section.title .titleBox h1 {
     font-size: 5rem;
@@ -139,6 +146,12 @@ i {
     margin-right: 7px;
 }
 
+.title-mockup{
+    max-width:350px;
+    height: auto;
+}
+
+
 /* description curvy line */
 section.title .title-line{
     position: absolute;
@@ -177,7 +190,7 @@ section.title .title-line{
 
 /* Waves */
 .waves { 
-    height: 150vh;
+    height: 100vh;
     width:100%;
     opacity: 90%;
     position: absolute;
@@ -188,23 +201,23 @@ section.title .title-line{
 }
   
 .wave1{
-    filter: blur(1rem);
+    filter: blur(0.5rem);
     background: url(Assets/Images/wave1.svg) repeat-x;
     position: absolute;
     top: 400px;
     width: 6400px;
-    height: 400px;
+    height: 1200px;
     animation: wave 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, swell 3s ease -1.25s infinite;
     transform: translate3d(0, 0, 0);
     z-index: -2;
 }
 .wave2 {
-    filter: blur(1rem);
+    filter: blur(0.5rem);
     background: url(Assets/Images/wave2.svg) repeat-x; 
     position: absolute;
     top: 400px;
     width: 6400px;
-    height: 400px;
+    height: 1200px;
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 14s ease -1.25s infinite;
     transform: translate3d(0, 0, 0);
     z-index: -2;
@@ -233,7 +246,8 @@ section.title .title-line{
 .stack-cards {
     height: 100%;
     background: var(--cardBackground);
-    border-radius: 50px; 
+    border-radius: 50px;
+    margin-top: 4rem; 
 }
 
 .stack-cards__item {
@@ -268,15 +282,71 @@ section.title .title-line{
     font-weight: 300;
     line-height: 160%
 }
+
+/* Quote API */
+.quote-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+    overflow-x: hidden;
+
+}
+
+.white-container{
+    position: absolute;
+    border-radius: 50px;
+    z-index: -1;
+    margin-bottom: 6rem;
+}
+
+.API-text{
+    position: relative;
+    top: -50%;
+    transform: translate(15%, -350%);
+    z-index: 1;
+    max-width: 80%;
+    text-align: center;
+
+    font-size: 2.5rem;
+}
+
+.character-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    min-width: 80%;
+    padding-top: 10rem;
+    
+}
+
+
+/* Quote API Wave */
+.quote-background-container { 
+    height: 100%;
+    width: 120%;
+    bottom: 0px;
+    width: 120%;
+    z-index: -1;
+}
+  
+.quote-background{
+    filter: blur(0rem);
+    position: relative;
+    bottom: -4rem;
+    height: 12rem;
+}
   
 
 /* Footer */
 .footer{
-    height: 7.5rem;
+    height: 6rem;
+    /* background: white; */
+    width: 100%;
 }
 
 .footer .footer-menu{
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     column-gap: 2rem;
@@ -287,26 +357,4 @@ section.title .title-line{
 .footer .footer-menu-item{
     font-size: 0.8rem;
     font-weight: 300;
-}
-
-/* Footer Wave */
-
-.quote-background-wave { 
-    height: 100%;
-    width: 100%;
-    bottom: 0px;
-    left:0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-  
-.wave3{
-    filter: blur(0rem);
-    background: url(Assets/Images/Background.svg) repeat-x;
-    position: absolute;
-    width: 6400px;
-    height: 30vh;
-    z-index: -3;
-    animation: wave 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite, swell 3s ease -1.25s infinite;
-    transform: translate3d(0, 0, 0);
 }
