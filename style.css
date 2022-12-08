@@ -185,6 +185,7 @@ section.title .title-line {
     animation: pulse 1s infinite;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    z-index: 3;
 }
 
 @-webkit-keyframes pulse {
