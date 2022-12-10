@@ -64,3 +64,9 @@ function onGeoError() {
 }
 
  navigator.geolocation.getCurrentPosition(onGeoProper, onGeoError);
+
+
+
+ //card stacking
+
+ 
