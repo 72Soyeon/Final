@@ -137,17 +137,19 @@ section.title .titleBox .title-description {
 
 .title-button-container {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    column-gap: 1.5rem;
+    gap: 20px;
+    margin-top: 6vh;
 }
 
 .title-button {
     background-color: #ffffff;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    min-width: 8rem;
+    width: 8rem;
     border-radius: 8px;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     display: flex;
     align-items: flex-end;
 
@@ -451,7 +453,8 @@ section.title .title-line {
     
     body{
         background: linear-gradient(180deg, #FAE3ED 0%, #FCF4F6 100%);
-        width: 320px;
+        /* width: 320px; */
+        margin: 0 2vw 0 2vw;
         overflow-x: hidden;
         padding: 0 100px 0 100px;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -466,6 +469,8 @@ section.title .title-line {
     .app-name{
         display: flex;
         align-items: flex-end;
+        margin: 10vh 0 2vh 0;
+        gap: 20px;
     }
 
     .title-text{
@@ -475,6 +480,7 @@ section.title .title-line {
         font-size: 3rem;
         line-height: 100%;
         color: #FF7C7C;
+        margin: 0;
     }
 
     .navigation{
@@ -501,7 +507,78 @@ section.title .title-line {
 
     .app-logo{
         display: none;
+        height: 3rem;
     }
+
+    .title-button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .title-button {
+        background-color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        width: 8rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: flex-end;
+    
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .title-button-description {
+        color: #ffadad;
+        font-size: 0.8rem;
+        margin: 0px;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: var(--pink);
+    }
+
+    .title-button-store {
+        color: var(--pink);
+        font-size: 1rem;
+    }
+    
+    i {
+        width: 20%;
+        text-align: center;
+        font-size: 28px;
+        margin-right: 7px;
+    }
+    
+    .title-mockup {
+        position: relative;
+        max-width: 240px;
+        left: 20vw;
+        top: -10vh;
+        opacity: 50%;
+        z-index: -100;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+
+
+    
 
     
 
