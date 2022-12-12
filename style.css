@@ -366,7 +366,7 @@ section.title .title-line {
 
 .white-container {
     position: absolute;
-    width: 80%;
+    width: 75%;
     height: 30vh;
     border-radius: 50px;
     margin-bottom: 6rem;
@@ -377,7 +377,7 @@ section.title .title-line {
 .API-text {
     position: relative;
     top: -6vh;
-    transform: translate(30%, -350%);
+    transform: translate(20%, -350%);
     z-index: 1;
     max-width: 60%;
     text-align: left;
