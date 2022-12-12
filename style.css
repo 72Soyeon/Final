@@ -611,12 +611,14 @@ section.title .title-line {
 
     .footer-menu{
         display: flex;
-        justify-content: space-around
+        justify-content: space-around;
+        align-items: flex-end;
 
     }
 
     .footer-menu-item{
         color: var(--pink);
+        font-size: 0.8rem;
         font-weight: 300;
     }
     
