@@ -10,6 +10,8 @@ html {
     margin-left: 0px;
     margin-right: 0px;
     overflow-x: clip;
+    cursor: url('Assets/Images/mouse.svg'), auto;	
+
 }
 
 .overflow-x{
