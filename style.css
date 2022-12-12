@@ -53,6 +53,10 @@ a:visited {
     color: var(--pink);
 }
 
+a:hover {
+    opacity: 50%;
+}
+
 li,
 ul {
     list-style: none;
