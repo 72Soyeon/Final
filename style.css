@@ -1,4 +1,5 @@
-/* font */
+@media (min-width: 64em) and (max-width: 120em){
+    /* font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
 
 /* Style-colors*/
@@ -10,8 +11,7 @@ html {
     margin-left: 0px;
     margin-right: 0px;
     overflow-x: clip;
-    cursor: url('Assets/Images/mouse.svg'), auto;	
-
+    cursor: url('Assets/Images/mouse.svg'), auto;
 }
 
 .overflow-x{
@@ -300,9 +300,32 @@ section.title .title-line {
     align-self: flex-start;
 }
 
+/* .stack-cards-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+}
+
+.scroll-snapper{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+
+.stack-cards-container::-webkit-scrollbar {
+    display: none;
+} */
+
+
+
 .text-component {
     max-width: 45%;
     padding-top: -2rem;
+    padding-left: 5vw;
+    margin-right: -2vw;
 }
 .text-component h2 {
     font-size: 2.5rem;
@@ -332,8 +355,8 @@ section.title .title-line {
 
 .white-container {
     position: absolute;
-    width: 90%;
-    height: 200px;
+    width: 80%;
+    height: 30vh;
     border-radius: 50px;
     margin-bottom: 6rem;
     background-color: white;
@@ -342,7 +365,7 @@ section.title .title-line {
 
 .API-text {
     position: relative;
-    top: -50%;
+    top: -6vh;
     transform: translate(15%, -350%);
     z-index: 1;
     max-width: 80%;
@@ -409,6 +432,20 @@ section.title .title-line {
 }
 
 
-.left-character{
+
+
+
+
+}
+
+
+@media (min-width: 20em) and (max-width: 63.9375em){
+
     
+
+
+
+
+
+
 }
