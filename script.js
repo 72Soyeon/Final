@@ -63,4 +63,64 @@ function onGeoError() {
   weather.innterHTML = '';
 }
 
- navigator.geolocation.getCurrentPosition(onGeoProper, onGeoError);
+navigator.geolocation.getCurrentPosition(onGeoProper, onGeoError);
+
+
+
+// Cheer Phrases API
+
+displayPhrases();
+var typedPhrases = [];
+
+function displayPhrases(){
+  fetch(`https://script.google.com/macros/s/AKfycbwaQJSlmmZJTfCw0jnk9g4uqxRm21NqHGjZ1PJohZz4A2mSHH6vyiGxO7Ozr-rHGQ56JA/exec`)
+        .then(response => response.json()
+            .then(data => {
+              //console.log(data.data),
+              data.data.forEach(element => {
+                //console.log (element.Phrases),
+                typedPhrases.push(element.Phrases)
+              });
+              var typed = new Typed(".API-text",{
+                strings: typedPhrases,
+                typeSpeed: 80,
+                backSpeed: 50,
+                loop: true
+              });
+            }))
+}
+
+
+//Lottie Player Settings;
+// LottieInteractivity.create({
+//   player:'#playInView1',
+//   mode:"scroll",
+//   actions: [
+//       {
+//       visibility: [1.0, 1.0],
+//       type: "play"
+//       }
+//   ]
+// });
+
+// LottieInteractivity.create({
+//   player:'#playInView2',
+//   mode:"scroll",
+//   actions: [
+//       {
+//       visibility: [1.0, 1.0],
+//       type: "play"
+//       }
+//   ]
+// });
+
+// LottieInteractivity.create({
+//   player:'#playInView3',
+//   mode:"scroll",
+//   actions: [
+//       {
+//       visibility: [1.0, 1.0],
+//       type: "play"
+//       }
+//   ]
+// });

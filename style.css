@@ -280,6 +280,7 @@ section.title .title-line {
 
 /* https://codepen.io/bramus/pen/PobmGme */
 .stack-cards-item {
+    height: 75vh;
     position: sticky;
     top: 0.75rem;
     margin-top: 4rem;
@@ -325,6 +326,8 @@ section.title .title-line {
 
 .white-container {
     position: absolute;
+    width: 90%;
+    height: 200px;
     border-radius: 50px;
     margin-bottom: 6rem;
     background-color: white;
@@ -337,8 +340,7 @@ section.title .title-line {
     transform: translate(15%, -350%);
     z-index: 1;
     max-width: 80%;
-    text-align: center;
-
+    text-align: left;
     font-size: 2.5rem;
 }
 
