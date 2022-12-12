@@ -14,6 +14,10 @@ html {
     cursor: url('Assets/Images/mouse.svg'), auto;
 }
 
+.player{
+    width: 50vw;
+}
+
 .app-logo-mobile{
     display: none;
 }
@@ -559,8 +563,8 @@ section.title .title-line {
         position: relative;
         max-width: 240px;
         left: 20vw;
-        top: -10vh;
-        opacity: 50%;
+        top: -20vh;
+        opacity: 40%;
         z-index: -100;
         animation: float 6s ease-in-out infinite;
     }
@@ -577,8 +581,52 @@ section.title .title-line {
         }
     }
 
+    .quote-container-box{
+        display: none;
+    }
 
+    .footer{
+        display: none;
+    }
     
+    ul{
+        list-style-type:none;
+        padding-inline-start: 0;
+    }
+
+    .stack-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .stack-cards-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: museo, serif;
+        font-weight: 300;
+        color: #FF7C7C;
+
+    }
+
+    .player{
+        width: 90vw;
+    }
+
+    h2{
+        font-weight: 500;
+    }
+
+    .title{
+        height: 600px;
+    }
+
+    .scroll{
+        display: none;
+    }
 
     
 
