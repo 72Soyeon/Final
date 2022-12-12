@@ -77,58 +77,58 @@
 
         <!-- cards -->
         <div class="stack-cards-container">
-            <ul class="stack-cards" id="cards">
-               <!-- function 1 -->
-              <li class="stack-cards-item" id="card_1">
-                <div class="card-content">
-                  <div class="text-component">
-                    <h2>Organize messy thoughts<br/>
-                        into a to-do list</h2>
-                      <p class="function-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                  </div>
-        
-                  <div>
-                      <img src="Assets/Images/function-1.png" alt="Function 1">
-                  </div>
-                </div>
-              </li>
+            <ul class="stack-cards js-stack-cards">
 
-              <!-- function 2 -->
-              <li class="stack-cards-item" id="card_2">
-                <div class="card-content">
-                  <div class="text-component">
-                    <h2>Place to-dos in the timeline</br>
-                      to visualize a day</h2>
+               <!-- function 1 -->
+              <li class="stack-cards-item">
+                <div class="text-component">
+                  <h2>Organize your messy thoughts<br/>
+                      into a to-do list</h2>
                     <p class="function-description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                  </div>
-                  <div>
-                    <img src="Assets/Images/Function-2.png" alt="Function 2">
-                  </div>
                 </div>
-            </li>
+      
+                <div>
+                    <!-- <img src="Assets/Images/function-1.png" alt="Function 1"> -->
+                    <lottie-player id = "playInView1" src="Assets/Images/a_final.json" background="transparent"  speed="1"  style="width: 50vw" autoplay loop ></lottie-player>
+                </div>
+              </li>
 
-            <!-- function 3 -->
-            <li class="stack-cards-item" id="card_3">
-              <div class="card-content">
+              <!-- function 2 -->
+              <li class="stack-cards-item">
                 <div class="text-component">
-                  <h2>Check progress anytime<br/>
-                    on widget</h2>
+                  <h2>Place your to-dos<br/>
+                    in the timeline</br>
+                    to visualize your 24 hours</h2>
                   <p class="function-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                 </div>
-    
                 <div>
-                  <img src="Assets/Images/function-3.png" alt="Function 3">
+                  <!-- <img src="Assets/Images/Function-2.png" alt="Function 2"> -->
+                  <lottie-player id = "playInView2" src="Assets/Images/b_final.json" background="transparent"  speed="1"  style="width: 50vw" autoplay loop ></lottie-player>
                 </div>
-              </div>
+            </li>
+
+            <!-- function 3 -->
+            <li class="stack-cards-item">
+                <div class="text-component">
+                    <h2>Check progress anytime<br/>
+                      on wearable devices</br>
+                      and home screen</h2>
+                    <p class="function-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+      
+                  <div>
+                    <!-- <img src="Assets/Images/function-3.png" alt="Function 3"> -->
+                    <lottie-player id = "playInView3" src="Assets/Images/c_final.json" background="transparent"  speed="1"  style="width: 50vw" autoplay loop ></lottie-player>
+                  </div>
             </li>
           </ul>
 
@@ -140,7 +140,7 @@
       <div class="quote-container">
         <div class="white-container" >
           <img src = "./Assets/Images/quote-white.svg" alt="white container"/>
-          <p class="API-text">"API Text Holder"</p>
+          <div class="API-text" id="phrases"></div>
         </div>
         <div class="character-container">
           <div class="left-character">
@@ -167,7 +167,8 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="script.js"></script>
-
 
 </html>
