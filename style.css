@@ -14,6 +14,11 @@ html {
     cursor: url('Assets/Images/mouse.svg'), auto;
 }
 
+.app-logo-mobile{
+    display: none;
+}
+
+
 .overflow-x{
     overflow-x: hidden;
 }
@@ -440,9 +445,65 @@ section.title .title-line {
 
 
 @media (min-width: 20em) and (max-width: 63.9375em){
+    *{
+        /* display: none; */
+    }
+    
+    body{
+        background: linear-gradient(180deg, #FAE3ED 0%, #FCF4F6 100%);
+        width: 320px;
+        overflow-x: hidden;
+        padding: 0 100px 0 100px;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .app-name{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .title-text{
+        font-family: 'Museo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 100%;
+        color: #FF7C7C;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .title-description{
+        font-family: 'Museo';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #FF7C7C;
+    }
+
+    /* .square-box{
+        background-color: #ffffff;
+        position: relative;
+        width: 60px;
+        height: 40px;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 10px;
+    } */
+
+    .app-logo{
+        display: none;
+    }
 
     
-
 
 
 
