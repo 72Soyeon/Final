@@ -478,7 +478,7 @@ section.title .title-line {
         background: linear-gradient(180deg, #FAE3ED 0%, #FCF4F6 100%);
         /* width: 320px; */
         /* margin: 0 2vw 0 2vw; */
-        overflow-x: hidden;
+        overflow-x: clip;
         /* padding: 0 100px 0 100px; */
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
@@ -510,7 +510,7 @@ section.title .title-line {
 
     .titleBox{
         margin: 0 1vw 0 1vw;
-        padding: 0 100px 0 100px;
+        padding: 0 60px 0 60px;
 
     }
 
@@ -628,12 +628,12 @@ section.title .title-line {
     .stack-cards{
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 80px;
     }
 
     .stack-cards-container{
         margin: 0 1vw 0 1vw;
-        padding: 0 100px 0 100px;
+        padding: 0 60px 0 60px;
 
     }
     
