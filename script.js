@@ -1,7 +1,12 @@
 //Preloading 
-loader = document.getElementById("preloader");
-$(window).on("load", function(){
-  loader.fadeOut("slow");
+// loader = document.getElementById("preloader");
+// $(window).on("load", function(){
+//   loader.fadeOut("slow");
+// });
+
+$(document).ready(function() {
+  $('#body').show();
+  $('#preloader').hide();
 });
 
 // Scroll Animation
