@@ -11,7 +11,7 @@
         margin-left: 0px;
         margin-right: 0px;
         overflow-x: clip;
-        cursor: url('Assets/Images/mouse.svg'), auto;
+        cursor: url("Assets/Images/mouse.svg"), auto;
     }
 
     .player {
@@ -21,7 +21,6 @@
     .app-logo-mobile {
         display: none;
     }
-
 
     .overflow-x {
         overflow-x: hidden;
@@ -44,7 +43,6 @@
         font-family: museo, serif;
         color: var(--pink);
         max-width: 100vw;
-
     }
 
     #loader {
@@ -58,11 +56,9 @@
         font-size: 5rem;
         z-index: 100;
         top: -20px;
-        cursor: url('Assets/Images/White-cursor.svg'), auto;
-
+        cursor: url("Assets/Images/White-cursor.svg"), auto;
+        display: none;
     }
-
-
 
     .loader-text {
         display: flex;
@@ -161,7 +157,7 @@
     }
 
     #piece-of-cake {
-        background-image: url('/Assets/Images/main-line.svg');
+        background-image: url("/Assets/Images/main-line.svg");
         background-repeat: no-repeat;
         background-position: 0% 75%;
     }
@@ -288,7 +284,8 @@
         top: 400px;
         width: 6400px;
         height: 1200px;
-        animation: wave 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 3s ease -1.25s infinite;
+        animation: wave 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+            swell 3s ease -1.25s infinite;
         transform: translate3d(0, 0, 0);
         z-index: -2;
     }
@@ -300,7 +297,8 @@
         top: 400px;
         width: 6400px;
         height: 1200px;
-        animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 14s ease -1.25s infinite;
+        animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+            swell 14s ease -1.25s infinite;
         transform: translate3d(0, 0, 0);
         z-index: -2;
     }
@@ -330,14 +328,30 @@
     /* Cards */
     .stack-cards {
         width: 100%;
-        top: 1rem;
+        /* top: 1rem; */
         /* height: 100vh; */
-        height: 100%;
         --stack-cards-gap: var(--space-sm);
         /* overflow: scroll; */
-        /* scroll-snap-type: y mandatory; */
+
         z-index: 3;
         position: relative;
+    }
+
+    .scroll-container {
+        position: fixed;
+        top: 1.5rem;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .scroll-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroll-end-section {
+        scroll-snap-align: end;
     }
 
     .stack-cards::-webkit-scrollbar {
@@ -452,7 +466,6 @@
         width: 100vw;
         margin-left: -1.8rem;
         overflow-x: hidden;
-
     }
 
     .quote-container-box {
@@ -462,7 +475,7 @@
 
     /* Footer */
     .footer-pc {
-        height: 5rem;
+        height: 7rem;
         overflow-x: hidden;
     }
 
@@ -474,7 +487,6 @@
         margin-left: 0px;
         margin-right: 0px;
         overflow-x: hidden;
-
     }
 
     .footer-pc .footer-menu-item {
@@ -486,16 +498,9 @@
     .footer-mobile {
         display: none;
     }
-
-
-
-
-
 }
 
-
 @media (min-width: 1em) and (max-width: 63.9375em) {
-
     :root {
         --pink: #ff7c7c;
         --background: #fef9f8;
@@ -514,7 +519,7 @@
     }
 
     body {
-        background: linear-gradient(180deg, #FAE3ED 0%, #FCF4F6 100%);
+        background: linear-gradient(180deg, #fae3ed 0%, #fcf4f6 100%);
         /* width: 320px; */
         /* margin: 0 2vw 0 2vw; */
         overflow-x: clip;
@@ -525,7 +530,6 @@
         /* for Firefox */
         overflow-y: scroll;
         font-family: museo, serif;
-
     }
 
     body::-webkit-scrollbar {
@@ -540,12 +544,12 @@
     }
 
     .title-text {
-        font-family: 'Museo';
+        font-family: "Museo";
         font-style: normal;
         font-weight: 500;
         font-size: 3rem;
         line-height: 100%;
-        color: #FF7C7C;
+        color: #ff7c7c;
         margin: 0;
     }
 
@@ -564,8 +568,7 @@
         font-size: 5rem;
         z-index: 100;
         top: -20px;
-        cursor: url('Assets/Images/White-cursor.svg'), auto;
-
+        cursor: url("Assets/Images/White-cursor.svg"), auto;
     }
 
     .loader-text {
@@ -574,20 +577,20 @@
         margin-top: 50vh;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .weather-container{
+    .weather-container {
         display: none;
     }
 
     .title-description {
-        font-family: 'Museo';
+        font-family: "Museo";
         font-style: normal;
         font-weight: 300;
         font-size: 1.2rem;
-        color: #FF7C7C;
+        color: #ff7c7c;
     }
 
     .app-logo {
@@ -682,7 +685,6 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-
     }
 
     .footer-menu-item {
@@ -704,8 +706,6 @@
         padding: 0 60px 0 60px;
     }
 
-
-
     .stack-cards-item {
         display: flex;
         flex-direction: column;
@@ -714,7 +714,7 @@
         text-align: center;
         font-family: museo, serif;
         font-weight: 300;
-        color: #FF7C7C;
+        color: #ff7c7c;
     }
 
     .player {
@@ -736,5 +736,4 @@
     .animation {
         margin-bottom: 5rem;
     }
-
 }
