@@ -47,15 +47,6 @@
 
     }
 
-    #preloader {
-        background-color: var(--pink);
-        color: var(--cardBackground);
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-    }
-
     .margin {
         margin-left: 1.8rem;
         margin-right: 1.8rem;
