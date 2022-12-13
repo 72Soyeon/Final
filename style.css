@@ -81,7 +81,8 @@ body::-webkit-scrollbar {
 
 /* Header(Navigation Bar) */
 .navigation {
-    position: relative;
+    position: fixed;
+    width: 96%;
     display: flex;
     z-index: 20;
     top: 1.5rem;
@@ -202,7 +203,7 @@ section.title .title-line {
     animation: pulse 1s infinite;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    z-index: 3;
+    z-index: 4;
 }
 
 @-webkit-keyframes pulse {
@@ -291,11 +292,13 @@ section.title .title-line {
 
 /* Cards */
 .stack-cards {
-    /* height: 100vh; */
-    height: 100%;
+    top: 0.4rem;
+    height: 100vh;
     --stack-cards-gap: var(--space-sm);
     overflow: scroll;
-    /* scroll-snap-type: y proximity; */
+    scroll-snap-type: y mandatory;
+    z-index: 3;
+    position: relative;
 }
 
 .stack-cards::-webkit-scrollbar {
@@ -303,10 +306,12 @@ section.title .title-line {
   }
 
 .stack-cards-item {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
     height: 75vh;
     position: relative;
-    /* top: 0.75rem; */
     margin-bottom: 4rem;
+    margin-top: 4rem;
     background: var(--cardBackground);
     border-radius: 80px;
     padding: 4.5rem;
@@ -318,7 +323,7 @@ section.title .title-line {
     align-self: flex-start;
 }
 
-.stack-cards-item{
+.sectionDivider{
     scroll-snap-align: start;
 }
 
@@ -361,7 +366,7 @@ section.title .title-line {
 .quote-container {
     display: flex;
     justify-content: center;
-    margin-top: 12rem;
+    margin-top: 8rem;
     margin-bottom: 8rem;
 }
 
@@ -380,7 +385,7 @@ section.title .title-line {
     top: -6vh;
     transform: translate(20%, -350%);
     z-index: 1;
-    max-width: 60%;
+    max-width: 90%;
     text-align: left;
     font-size: 2.5rem;
 }
@@ -421,7 +426,7 @@ section.title .title-line {
 
 /* Footer */
 .footer-pc {
-    height: 6rem;
+    height: 5rem;
     overflow-x: hidden;
 }
 
@@ -453,7 +458,7 @@ section.title .title-line {
 }
 
 
-@media (min-width: 20em) and (max-width: 63.9375em){
+@media (min-width: 1em) and (max-width: 63.9375em){
     *{
         /* display: none; */
     }
@@ -510,8 +515,6 @@ section.title .title-line {
     }
 
     .titleBox{
-        margin: 0 1vw 0 1vw;
-        padding: 0 60px 0 60px;
 
     }
 
