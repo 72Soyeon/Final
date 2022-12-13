@@ -571,7 +571,7 @@
     .loader-text {
         display: flex;
         justify-content: center;
-        margin-top: 25%;
+        margin-top: 100%;
     }
 
     .logo{
