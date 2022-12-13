@@ -1,3 +1,7 @@
+$("#loader").delay(1000).fadeOut("slow", function(){
+  $('.landing').fadeIn("slow");
+});
+
 // Scroll Animation
 $(window).scroll(function () {
   var scrollTop = $(this).scrollTop();

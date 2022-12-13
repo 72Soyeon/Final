@@ -47,6 +47,29 @@
 
     }
 
+#loader{
+        width: 100%;
+        height: 120%;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        background-color: var(--pink);
+        color: var(--background);
+        font-size: 5rem;
+        z-index: 100;
+        top: -20px;
+        cursor: url('Assets/Images/White-cursor.svg'), auto;
+
+}
+
+
+
+    .loader-text{
+        display: flex;
+        justify-content: center;
+        margin-top: 25%;
+    }
+
     .margin {
         margin-left: 1.8rem;
         margin-right: 1.8rem;

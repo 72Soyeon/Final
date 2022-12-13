@@ -1,173 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slice</title>
-    <link rel="icon" type="image/x-icon" href="./Assets/Images/favicon.png">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/tma0pfw.css">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slice</title>
+  <link rel="icon" type="image/x-icon" href="./Assets/Images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/tma0pfw.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
-    <!-- navigation bar -->
-      <section class="navigation margin overflow-x">
-        <div class="logo"><a href="index.html">Slice</a></div>
-        <div class="weather-container">
-            <span id="location">Finding the location</span>
-            <span id="weather">...</span><br/>
-            <img id="weather-emoji" src="./Assets/Images/music_note.svg" alt="music note"/>
-        </div>
-      </section>
+  <!-- loader -->
+  <div id="loader">
+    <p class="loader-text">Slice</p>
+  </div>
+  <!-- navigation bar -->
+  <section class="navigation margin overflow-x landing">
+    <div class="logo"><a href="index.html">Slice</a></div>
+    <div class="weather-container">
+      <span id="location">Finding the location</span>
+      <span id="weather">...</span><br />
+      <img id="weather-emoji" src="./Assets/Images/music_note.svg" alt="music note" />
+    </div>
+  </section>
 
+  <!-- Main Section:Functions -->
+  <div class="scroll overflow-x landing">
+    <p style="opacity: 1;">Scroll Down</p>
+  </div>
 
-    <!-- Intro Title -->
-    
-
-
-    <!-- Main Section:Functions -->
-    <div class="scroll overflow-x">
-      <p style="opacity: 1;">Scroll Down</p>
+  <section class="main landing">
+    <!-- wave -->
+    <div class="waves">
+      <div class="wave1"></div>
+      <div class="wave2"></div>
     </div>
 
-    <section class="main">
-        <!-- wave -->
-        <div class="waves">
-            <div class="wave1"></div>
-            <div class="wave2"></div>
-        </div>
+    <!-- cards -->
 
-        <!-- cards -->
+    <div class="stack-cards landing">
 
-            <div class="stack-cards">
-
-              <section class="title margin overflow-x sectionDivider"> 
-                <!-- left description -->
-                  <div class="titleBox">
-                    <div class="app-name">
-                      <h1 class="title-text">To SLICE</h1>
-                      <img class="app-logo" src="./Assets/Images/app-logo.svg"/>
-                      <img class="app-logo-mobile" src="./Assets/Images/app logo with box.svg"/>
-                    </div>
-          
-                    <div class="title-description">
-                        Your everyday tasks<br/>
-                        into <span id="piece-of-cake">a piece of cake</span> 
-                    </div> 
-                    <!-- <img class="title-line" src="./Assets/Images/main-line.svg"/>    -->
-          
-                      <!-- buttons to appstore -->
-                      <div class="title-button-container">
-                        <!-- App Store -->
-                        <a class="title-button" href="https://www.apple.com/" target="_blank">
-                          <i><img src = "./Assets/Images/apple.svg" alt="Apple Logo"/></i>
-                          <p class="title-button-description">Get on the <br/> <span class="title-button-store">App Store</span></p>
-                        </a>
-          
-                        <!-- Play Store -->
-                        <a class="title-button" href="https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank">
-                          <i><img src = "./Assets/Images/Google.svg" alt="Google Logo"/></i>
-                          <p class="title-button-description">Get on the <br/><span class="title-button-store">Google Play</span></p>
-                        </a>
-                      </div>
-                </div>
-                <!-- right image -->
-                <img class="title-mockup" src="./Assets/Images/Right.png" />
-        
-            </section>
-
-               <!-- function 1 -->
-                <div class="stack-cards-item sectionDivider">
-                  <div class="text-component">
-                    <h2>Organize your messy thoughts<br/>
-                        into a to-do list</h2>
-                      <p class="function-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                  </div>
-        
-                  <div>
-                      <lottie-player class ="player" id = "playInView1" src="Assets/Images/a_final.json" background="transparent"  speed="1"  autoplay loop ></lottie-player>
-                  </div>
-                </div>
-
-              <!-- function 2 -->
-                <div class="stack-cards-item sectionDivider">
-                  <div class="text-component">
-                    <h2>Place your to-dos<br/>
-                      in the timeline</br>
-                      to visualize your 24 hours</h2>
-                    <p class="function-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                  <div>
-                    <lottie-player class ="player" id = "playInView2" src="Assets/Images/b_final.json" background="transparent"  speed="1"  autoplay loop ></lottie-player>
-                  </div>
-                </div>
-
-            <!-- function 3 -->
-              <div class="stack-cards-item sectionDivider">
-                <div class="text-component">
-                    <h2>Check progress anytime<br/>
-                      on wearable devices</br>
-                      and home screen</h2>
-                    <p class="function-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-      
-                  <div>
-                    <lottie-player class ="player" id = "playInView3" src="Assets/Images/c_final.json" background="transparent"  speed="1"  autoplay loop ></lottie-player>
-                  </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- Quote holder -->
-    <section class="quote-container-box overflow-x">
-      <div class="quote-container">
-        <div class="white-container" >
-          <img src = "./Assets/Images/quote-white.svg" alt="white container"/>
-            <div class="API-text" id="phrases"> </div>
-        </div>
-        <div class="character-container">
-          <div class="left-character">
-            <img src = "./Assets/Images/characters-left.png" alt="white container" style = "width : 20vw"/>
+      <section class="title margin overflow-x sectionDivider">
+        <!-- left description -->
+        <div class="titleBox">
+          <div class="app-name">
+            <h1 class="title-text">To SLICE</h1>
+            <img class="app-logo" src="./Assets/Images/app-logo.svg" />
+            <img class="app-logo-mobile" src="./Assets/Images/app logo with box.svg" />
           </div>
-          <div class="right-character">
-            <img src = "./Assets/Images/characters-right.png" alt="white container" style = "width : 17vw"/>
+
+          <div class="title-description">
+            Your everyday tasks<br />
+            into <span id="piece-of-cake">a piece of cake</span>
+          </div>
+          <!-- <img class="title-line" src="./Assets/Images/main-line.svg"/>    -->
+
+          <!-- buttons to appstore -->
+          <div class="title-button-container">
+            <!-- App Store -->
+            <a class="title-button" href="https://www.apple.com/" target="_blank">
+              <i><img src="./Assets/Images/apple.svg" alt="Apple Logo" /></i>
+              <p class="title-button-description">Get on the <br /> <span class="title-button-store">App Store</span>
+              </p>
+            </a>
+
+            <!-- Play Store -->
+            <a class="title-button" href="https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank">
+              <i><img src="./Assets/Images/Google.svg" alt="Google Logo" /></i>
+              <p class="title-button-description">Get on the <br /><span class="title-button-store">Google Play</span>
+              </p>
+            </a>
           </div>
         </div>
+        <!-- right image -->
+        <img class="title-mockup" src="./Assets/Images/Right.png" />
+
+      </section>
+
+      <!-- function 1 -->
+      <div class="stack-cards-item sectionDivider">
+        <div class="text-component">
+          <h2>Organize your messy thoughts<br />
+            into a to-do list</h2>
+          <p class="function-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <lottie-player class="player" id="playInView1" src="Assets/Images/a_final.json" background="transparent"
+            speed="1" autoplay loop></lottie-player>
+        </div>
       </div>
-    </section>
+
+      <!-- function 2 -->
+      <div class="stack-cards-item sectionDivider">
+        <div class="text-component">
+          <h2>Place your to-dos<br />
+            in the timeline</br>
+            to visualize your 24 hours</h2>
+          <p class="function-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div>
+          <lottie-player class="player" id="playInView2" src="Assets/Images/b_final.json" background="transparent"
+            speed="1" autoplay loop></lottie-player>
+        </div>
+      </div>
+
+      <!-- function 3 -->
+      <div class="stack-cards-item sectionDivider">
+        <div class="text-component">
+          <h2>Check progress anytime<br />
+            on wearable devices</br>
+            and home screen</h2>
+          <p class="function-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <lottie-player class="player" id="playInView3" src="Assets/Images/c_final.json" background="transparent"
+            speed="1" autoplay loop></lottie-player>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote holder -->
+  <section class="quote-container-box overflow-x">
+    <div class="quote-container">
+      <div class="white-container">
+        <img src="./Assets/Images/quote-white.svg" alt="white container" />
+        <div class="API-text" id="phrases"> </div>
+      </div>
+      <div class="character-container">
+        <div class="left-character">
+          <img src="./Assets/Images/characters-left.png" alt="white container" style="width : 20vw" />
+        </div>
+        <div class="right-character">
+          <img src="./Assets/Images/characters-right.png" alt="white container" style="width : 17vw" />
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- Footer -->
-    <section class="footer-pc margin overflow-x">
-      <div class="footer-menu">
-        <div class="logo"><a href="index.html">Slice</a></div>
-        <div class="footer-menu-item"><a href="https://www.soyeonkim.info/" target="_blank">About Creators: So Yeon Kim</a></div>
-        <div class="footer-menu-item"><a href="https://www.andiehan.info/" target="_blank">About Creators: Andie Han</a></div>
-        <div class="footer-menu-item"><a href="https://www.notion.so/syk-adaptingeverydayitems/Final-Project-Slice-3da964497f6d4370b038dea14981d39a" target="_blank">Documentation</a></div>
+  <!-- Footer -->
+  <section class="footer-pc margin overflow-x">
+    <div class="footer-menu">
+      <div class="logo"><a href="index.html">Slice</a></div>
+      <div class="footer-menu-item"><a href="https://www.soyeonkim.info/" target="_blank">About Creators: So Yeon
+          Kim</a></div>
+      <div class="footer-menu-item"><a href="https://www.andiehan.info/" target="_blank">About Creators: Andie Han</a>
       </div>
-    </section>
+      <div class="footer-menu-item"><a
+          href="https://www.notion.so/syk-adaptingeverydayitems/Final-Project-Slice-3da964497f6d4370b038dea14981d39a"
+          target="_blank">Documentation</a></div>
+    </div>
+  </section>
 
-    <section class="footer-mobile margin overflow-x">
-      <div class="footer-menu">
-        <div class="logo"><a href="index.html">Slice</a></div>
-        <div class="footer-menu-item"><a href="https://www.soyeonkim.info/" target="_blank">So Yeon Kim</a></div>
-        <div class="footer-menu-item"><a href="https://www.andiehan.info/" target="_blank">Andie Han</a></div>
-        <div class="footer-menu-item"><a href="https://www.notion.so/syk-adaptingeverydayitems/Final-Project-Slice-3da964497f6d4370b038dea14981d39a" target="_blank">Doc</a></div>
-      </div>
-    </section>
+  <section class="footer-mobile margin overflow-x">
+    <div class="footer-menu">
+      <div class="logo"><a href="index.html">Slice</a></div>
+      <div class="footer-menu-item"><a href="https://www.soyeonkim.info/" target="_blank">So Yeon Kim</a></div>
+      <div class="footer-menu-item"><a href="https://www.andiehan.info/" target="_blank">Andie Han</a></div>
+      <div class="footer-menu-item"><a
+          href="https://www.notion.so/syk-adaptingeverydayitems/Final-Project-Slice-3da964497f6d4370b038dea14981d39a"
+          target="_blank">Doc</a></div>
+    </div>
+  </section>
 
 </body>
 
