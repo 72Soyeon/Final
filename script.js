@@ -90,36 +90,3 @@ fetch(`https://script.google.com/macros/s/AKfycbwaQJSlmmZJTfCw0jnk9g4uqxRm21NqHG
 }
 
 
-//Lottie Player Settings;
-// LottieInteractivity.create({
-//   player:'#playInView1',
-//   mode:"scroll",
-//   actions: [
-//       {
-//       visibility: [1.0, 1.0],
-//       type: "play"
-//       }
-//   ]
-// });
-
-// LottieInteractivity.create({
-//   player:'#playInView2',
-//   mode:"scroll",
-//   actions: [
-//       {
-//       visibility: [1.0, 1.0],
-//       type: "play"
-//       }
-//   ]
-// });
-
-// LottieInteractivity.create({
-//   player:'#playInView3',
-//   mode:"scroll",
-//   actions: [
-//       {
-//       visibility: [1.0, 1.0],
-//       type: "play"
-//       }
-//   ]
-// });
