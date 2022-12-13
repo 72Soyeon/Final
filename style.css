@@ -327,16 +327,9 @@ section.title .title-line {
     scroll-snap-align: start;
 }
 
-/* .scroll-snapper{
-    scroll-snap-align: start;
-} */
-
-
 .stack-cards-container::-webkit-scrollbar {
     display: none;
 }
-
-
 
 .text-component {
     max-width: 45%;

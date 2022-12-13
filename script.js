@@ -11,7 +11,6 @@ $(window).scroll(function() {
   });
 });
 
-
 // Weather API
 const weather = document.getElementById("weather");
 const city = document.getElementById("location");
@@ -88,5 +87,4 @@ fetch(`https://script.google.com/macros/s/AKfycbwaQJSlmmZJTfCw0jnk9g4uqxRm21NqHG
             });
           }))
 }
-
 
