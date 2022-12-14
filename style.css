@@ -62,7 +62,7 @@
     .loader-text {
         display: flex;
         justify-content: center;
-        margin-top: 25%;
+        margin-top: 50vh;
     }
 
     .margin {
@@ -228,6 +228,7 @@
         transition: all 0.3s;
         z-index: 4;
     }
+
 
     @-webkit-keyframes pulse {
         0% {

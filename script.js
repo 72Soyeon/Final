@@ -9,18 +9,21 @@ $("#loader").delay(2000).fadeOut("slow", function(){
   $('body').css({'overflow':'visible'});
 });
 
-// Scroll Animation
-$(window).scroll(function () {
-  var scrollTop = $(this).scrollTop();
+// Scroll Opacity
+var scrollVar = document.getElementsByClassName("scroll");
 
-  $('.scroll').css({
-    opacity: function () {
-      var elementHeight = $(this).height(),
-        opacity = ((elementHeight - scrollTop) / (elementHeight * 0.5));
-      return opacity;
-    }
-  });
-});
+var observer = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true){
+    console.log ("detected!");
+    $('#scroll').delay(200).fadeOut("slow");
+  }
+  else{
+    $('#scroll').delay(200).fadeIn("slow");
+  }
+}, { threshold: [0] });
+
+observer.observe(document.querySelector("#final"));
+
 
 // Weather API
 const weather = document.getElementById("weather");
