@@ -24,14 +24,14 @@ const tempIcon = document.getElementById("weather-emoji");
 function onGeoProper(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
-  //console.log("You live in", lat, lng);
+  console.log("You live in", lat, lng);
   const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}&units=metric`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      city.innerHTML = `${data.name},`;
+      console.log(data.name);
+      city.innerHTML = data.name;
       weather.innerHTML = `${data.weather[0].main}, ${Math.round(data.main.temp)}°C`;
       let id = data.weather[0].main;
       console.log(id);
