@@ -30,8 +30,8 @@ function onGeoProper(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      city.innerHTML = `${data.name},`;
+      console.log(data.name);
+      city.innerHTML = data.name;
       weather.innerHTML = `${data.weather[0].main}, ${Math.round(data.main.temp)}°C`;
       let id = data.weather[0].main;
       console.log(id);
