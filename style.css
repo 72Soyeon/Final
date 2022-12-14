@@ -156,7 +156,7 @@
     }
 
     #piece-of-cake {
-        background-image: url("/Assets/Images/main-line.svg");
+        background-image: url("Assets/Images/main-line.svg");
         background-repeat: no-repeat;
         background-position: 0% 75%;
     }
