@@ -1,5 +1,12 @@
-$("#loader").delay(1000).fadeOut("slow", function(){
+$('body').css({'overflow':'hidden'});
+  $(document).bind('scroll',function () { 
+       window.scrollTo(0,0); 
+  });
+
+$("#loader").delay(2000).fadeOut("slow", function(){
   $('.landing').fadeIn("slow");
+  $(document).unbind('scroll'); 
+  $('body').css({'overflow':'visible'});
 });
 
 // Scroll Animation
