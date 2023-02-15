@@ -216,7 +216,7 @@
     /* Scroll down */
     .scroll {
         position: fixed;
-        left: 50%;
+        left: 48%;
         bottom: 5%;
         padding: -2rem;
         font-size: 0.8rem;
