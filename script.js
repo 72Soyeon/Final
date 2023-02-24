@@ -25,6 +25,7 @@ var observer = new IntersectionObserver(function(entries) {
 observer.observe(document.querySelector("#final"));
 
 
+/*
 // Weather API
 const weather = document.getElementById("weather");
 const city = document.getElementById("location");
@@ -70,7 +71,7 @@ function onGeoError() {
 }
 
 navigator.geolocation.getCurrentPosition(onGeoProper, onGeoError);
-
+*/
 
 
 // Cheer Phrases API
