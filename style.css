@@ -1,4 +1,4 @@
-@media (min-width: 64em) and (max-width: 180em) {
+@media (min-width: 50em) and (max-width: 180em) {
     /* font */
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
 
@@ -500,7 +500,7 @@
     }
 }
 
-@media (min-width: 1em) and (max-width: 63.9375em) {
+@media (min-width: 1em) and (max-width: 49.9375em) {
     :root {
         --pink: #ff7c7c;
         --background: #fef9f8;
